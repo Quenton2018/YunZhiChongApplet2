@@ -1,0 +1,25 @@
+.logs{width: 100%;height: 100%;background: #fff;box-sizing: border-box}
+.logo{margin: 50px 0;width: 100%;text-align: center}
+.logo image{width: 75px;height: 75px}
+.login-form{margin:0 40px;}
+.form-group{position: relative;margin-bottom: 20px;}
+.form-group label{position: absolute;left: 0;top: 0px;}
+.form-group input{border-radius: 0;
+  border: none;border-bottom: 1px solid #eae5e0;
+  font-size: 18px;color: #333;padding-left: 30px;margin-bottom: 0; padding-bottom: 5px 
+}
+.code{position: relative}
+page .code .send-code{z-index: 999;background: transparent;border-width: 0;outline: transparent;position: absolute;right: 0;
+  top: -10px;font-size: 16px;border: 1px solid transparent}
+.send-code::after{border: none}
+.form-group text{position: absolute;right: 0;top: 3px;font-size: 14px;color: #515151}
+.form-group image{width: 15px;height: 18px}
+.login-method{font-size: 16px;text-align: right;color: #ff7426;margin-top: -10px}
+.btn-submit{margin: 30px 0 30px;}
+.btn-submit .weui-btn{border-radius: 50px;background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));color: white;
+  letter-spacing: 40px;text-indent: 40px;font-size: 18px;}
+
+.footer{position: absolute;bottom: 50px;width: 100%;text-align: center;left: 0;display: flex;justify-content: space-around;
+  padding-left: 60px;padding-right: 60px;box-sizing: border-box}
+.footer view{font-size: 15px;color: #666;}
+.footer .register{font-weight: bold;color: #FD8324;}

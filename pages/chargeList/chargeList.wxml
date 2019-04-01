@@ -1,0 +1,36 @@
+<view id="J_refresh" class="mui-content mui-scroll-wrapper" style="background: #fff;">
+  <view class="mui-scroll">
+    <view class="charge-ul" wx:for="{{list}}" wx:key="{{key}}">
+      <navigator wx:if="{{item.status == 2}}" url='../chargeDetail/chargeDetail?orderNo={{item.sn}}'>
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__bd">
+            <view class="weui-select">
+              <view class='time-top'>
+                <text class='porint'></text>
+                <text class='creat-time'>{{item.createDate}}</text>
+              </view>
+              <view class='time-bottom'>
+                <text wx:if="{{item.status == 2 && !item.successFlag}}" class='fail'>充电失败</text>
+                <text wx:else>充电成功，已充时长{{item.remainder}}分钟</text>
+              </view>
+              <view class='anount'>
+                <text>{{item.amount}}元</text>
+              </view>
+            </view>
+          </view>  
+        </view>
+      </navigator>
+      <navigator wx:if="{{item.status == 1}}" url='../chargeing/chargeing?orderNo={{item.sn}}'>
+        <view class='item-active'>
+          <image src='http://image.jx9n.com/5rtbbYnFfMN6hyibWcEw_1552296027922.png'></image>
+          <text> {{item.charging.groupId.name}}</text>
+          <text style="color: #F57734"> 桩号{{item.charging.shellId}}-插座号{{item.czId.code | parseInt}}</text>
+        </view>
+        <view class='itemActiveInner'>
+          <text class="textBox">剩余时间 : {{item.timeDiffString}}</text>
+          <text class="progressBox" style="width: {{item.percent}}%"></text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

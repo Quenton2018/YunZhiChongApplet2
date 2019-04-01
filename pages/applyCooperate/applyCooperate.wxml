@@ -1,0 +1,31 @@
+<view class="apply-box">
+  <view class="apply-top">
+    <view class="apply-clearfix">
+      <view class="ling">0</view>
+      <view class="lingright"> 
+        <view>元投入,终身受益！</view>
+        <view>构建<text class="apply-text-color">互联网+物联网+充电社群</text>新生态平台</view>
+      </view>
+    </view>
+    <view class='list' style="margin-top:-15px">
+      <image src="http://image.jx9n.com/XXG5XTtMrA3K68Y75yCy_1552295179551.png"></image>
+      <text>市场合伙人合作模式,无需资金投入,公司免费提供设备</text>
+    </view>
+		<view class='list'>
+      <image src="http://image.jx9n.com/Z8X2AYr6YAYMYS6rYFwn_1552295179623.png"></image>
+      <text>长期收益共享,每月结算收入分成</text>
+    </view>
+		<view class='list'>
+      <image src="http://image.jx9n.com/CXtYn4SDZeMrbemKrrkm_1552295179685.png"></image>
+      <text>售后支持设备免费以旧换新，24小时客服热线</text>
+    </view>
+  </view>
+  <view class="apply-bottom" >服务热线:400-825-1068</view>
+    <view class="apply-submit" bindtap='calling'>
+			<text>联系客服</text>
+		</view>
+    <view class="apply-join">或</view>
+		<navigator class="apply-submit apply-btn2" url='../applyPartner/applyPartner'>
+			我要加入云智充 立即共享赚钱 »
+		</navigator>
+</view>

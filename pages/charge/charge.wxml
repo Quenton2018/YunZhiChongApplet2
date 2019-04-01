@@ -1,0 +1,119 @@
+<view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
+  <view class="top-title">
+    <image src='http://image.jx9n.com/6pXNbtwP2rKjR6Rn2Kbp_1552295640602.png'></image>
+    <text bindtap='openNativeTitle'>{{location}}</text>
+  </view>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+
+<view style='background:#efeff4;'>
+  <view class="yzc-main"></view>
+  <view class='myContent'>
+    <view style='background:#fff;border-radius: 10px;'>
+      <view class="h2-title"><text>①</text> 选择桩号</view>
+      <!-- swiper -->
+      <view style='position: relative;overflow:hidden'>
+        <!-- 左右箭头 -->
+        <view class='last' bindtap='last'>‹</view>
+        <view class='prev' bindtap='prev'>›</view>
+        <swiper display-multiple-items="{{pileNum}}" wx:if="{{StakeList.length}}" current="{{defaultLoc}}" bindchange="bindchange">
+          <swiper-item wx:for="{{StakeList}}" wx:key="{{key}}"  data-code="{{item.code}}"> 
+            <view class="section_title {{code == item.code?'active':''}}" data-code="{{item.code}}" data-index="{{index}}" bindtap='selePile'>{{item.shell}}</view>
+          </swiper-item>
+        </swiper>
+        <swiper display-multiple-items="1" wx:else>
+          <swiper-item>
+            <view class="section_title active">无</view>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class='hr'></view>
+      <view class="h2-title"><text>②</text> 选择插座</view>
+      <!-- 插座 -->
+      <view class='socke-box'>
+        <view wx:for="{{socketList}}" wx:key="{{key}}" class="socket-list {{socketTab==index?'active':''}}">
+          <view wx:if="{{have == 1}}">
+            <view wx:if="{{item.status == 1}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='sockeClick'>{{item.code}}</view>
+            <view wx:else class='charing'>{{item.code}}</view>
+          </view>
+          <view wx:else>
+            <view style='color:#fff'>{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择时长 -->
+  <view class='sel-time'>
+    <view class='time-content'>
+      <view class="h2-title"><text>③</text> 选择充电时长</view>
+      <view class='time-list'>
+        <view wx:for="{{timeList}}" wx:key="{{key}}" class="time {{timeTab==index?'active':''}}">
+          <view bindtap='timeClick' data-price="{{item.price}}" data-id="{{item.id}}" data-state="{{item.state}}" data-defaultTime="{{item.defaultTime}}" data-index="{{index}}">{{item.defaultTime2}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='null'></view>
+  <!-- 收费说明 -->
+  <view class='state' hidden='{{fullTopflag}}'>
+    <view class='state-top'>收费说明：</view>
+    <view class='toll-wrap'>
+      <view wx:for="{{tollList}}" wx:key="{{key}}" class='state-list'>
+        <text wx:if="{{item.maxEle == 100}}">{{item.price}}元/小时100w以下</text>
+        <text wx:else>{{item.price}}元/小时({{item.minEle}}~{{item.maxEle}}w)</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='fotter'>
+  <view hidden="{{priceHid}}" class="total">
+    <text>价格:￥{{price}}</text>
+  </view>
+  <button bindtap='submitBtn'>开始充电</button>
+</view>
+<!-- 下单进度 -->
+<view class="progressBoxWrap" hidden='{{runHide}}'>
+  <view class="progressBox">
+    <view class="progressBoxTitle">请求执行中</view>
+    <view class="stepBox">
+      <view class="stepItem">
+        <image wx:if="{{one == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{one == false}}">开始下单</text>
+        <text wx:else class='one-true'>开始下单</text>
+      </view>
+      <view class="stepItem">
+        <image wx:if="{{two == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{two == false}}">校验设备</text>
+        <text wx:else class='one-true'>校验设备</text>
+      </view>
+      <view class="stepItem">
+        <image wx:if="{{three == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{three == false}}">发送命令给充电桩</text>
+        <text wx:else class='one-true'>发送命令给充电桩</text>
+      </view>
+      <view class="stepItem">
+        <image wx:if="{{four == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{four == false}}">等待充电桩回复</text>
+        <text wx:else class='one-true'>等待充电桩回复</text>
+      </view>
+      <view class="stepItem">
+        <image wx:if="{{five == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{five == false}}">赠送云钻</text>
+        <text wx:else class='one-true'>赠送云钻</text>
+      </view>
+      <view class="stepItem">
+        <image wx:if="{{six == false}}" src='{{runImg}}' animation="{{animationData}}"></image>
+        <image wx:else src='{{runImage}}'></image>
+        <text wx:if="{{six == false}}">开启充电桩成功</text>
+        <text wx:else class='one-true'>开启充电桩成功</text>
+      </view>
+    </view>  
+  </view>
+</view>
+

@@ -1,0 +1,9 @@
+<view class='box'>
+  <image src='http://image.jx9n.com/JbpCNcFdXpCZNTitWmRQ_1552730530333.png'></image>
+  <view class='title'>云智充</view>
+  <view class='login'>
+    <view class='fotter'>请完成微信授权以继续使用</view>
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权微信用户信息</button>
+  </view>
+</view>
+

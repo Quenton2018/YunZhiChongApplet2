@@ -1,0 +1,22 @@
+<view class="mui-content" style="background: #fff;">
+  <view class="yzc-main">
+    <view class="invite-banner">
+      <image src='http://image.jx9n.com/xsrJw5b87tnJksKccPET_1552300145591.png'></image>
+    </view>
+    <view class='invite'>邀请好友充电成功后获得云钻</view>
+    <button class='share user-motto' id="shareBtn" open-type="share" hover-class="other-button-hover">立即邀请</button>
+    <view class="invite-record">
+				<view class='h2'><text class="line2-left i"></text><text class="line-left i"></text>我的邀请记录<text class="line-right i"></text><text class="line2-right i"></text></view>
+				<view class="invite-box">
+					<view class="invite-list left">
+						<view class='h3'><text >{{invitationCount}}</text></view>
+						<view class='h4'>成功邀请(人)</view>					
+					</view>
+					<view class="invite-list right">
+						<view class='h3'><text>{{givePoints}}</text></view>
+						<view class='h4'>获得云钻(个)</view>					
+					</view>
+				</view>
+			</view>
+  </view>
+</view>

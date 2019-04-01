@@ -1,0 +1,15 @@
+page{height: 100%}
+.mui-content{width: 100%;height: 100%}
+.yzc-main{overflow: hidden}
+.no-iccard{text-align: center;margin: 60px 0 0;}
+.no-iccard image{width: 213px;height: 172px;}
+.btn-submit{margin: 30px 20px 20px;border-radius: 50px;background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));
+  padding: 8px 0;text-align: center;color: #fff;font-size: 18px}
+.no-iccard-p{color: #3D3D3D;font-size: 15px;padding: 40px 40px;}
+.no-iccard-desc{color: #999;text-align: center;font-size: 16px;margin-bottom: 25px}
+.list-iccard-p{position: relative}
+.list-iccard-p image{width: 100%;height: 160px}
+.iccard-box{width: 100%;padding: 20px;box-sizing: border-box;position: relative}
+.card{width: 100%;margin-top: -45px;margin-bottom: 20px;display: flex;justify-content: space-between;font-size: 16px;
+  padding: 0 25px;box-sizing: border-box}
+.right{color: #f00}

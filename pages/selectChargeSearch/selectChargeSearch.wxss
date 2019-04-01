@@ -1,0 +1,18 @@
+.yzc-main{margin: 0 20px;}
+.yzc-search{margin: 20px auto 0px;}
+.yzc-search .inp1{min-height: 35px;border: 1px solid #ccc;font-size: 16px;padding-left: 10px}
+.search-content{margin-top: 10px}
+.search-cdz-title{font-size: 15px;font-weight: 400;padding-top: 15px;color: #AFAFAF;}
+.search-area{margin-top: 5px}
+.search-area view{color: #515151;border-bottom: 1px solid #ccc;padding: 2px 0}
+.yzc-dw-text{border-bottom: 1px solid #C4C4C4;padding-bottom: 10px;display: flex;justify-content: space-between}
+.dw-title,.dw-relocation{margin-top: 5px}
+.dw-relocation{width: 30%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.dw-title{width: 70%;font-size: 18px;color: #515151;}
+.dw-relocation image{width: 16px;height: 16px;vertical-align: middle}
+.nearcdz-box{margin-top: 5px}
+.nearcdz-box image{width: 16px;height: 16px;vertical-align: middle}
+.dw-relocation{color: #FF6D22;text-align: right;font-size: 14px;line-height: 30px}
+.near-address{margin-bottom: 25px;padding-bottom: 20px}
+.recently view{border-bottom: 1px solid #C4C4C4;padding: 4px 0;color: #515151;font-size: 18px;
+  overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}

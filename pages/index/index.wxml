@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="{{isIpx ? 'iphonex':'iphone'}}" src='http://image.jx9n.com/SS7kRAREYyKsXQZP56et_1552300108305.png' bindtap='goToMyPage'></image>
+</view>

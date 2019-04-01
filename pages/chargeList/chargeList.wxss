@@ -1,0 +1,16 @@
+itemActive{border-bottom: 1px solid #eee;}
+navigator{position: relative}
+.porint{display: inline-block;width: 10px;height: 10px;background: #ff7426;border-radius: 50%;vertical-align: middle;
+  margin-right:5px}
+.creat-time{margin-right: 8px}
+.weui-cell_select{padding-top: 15px;padding-bottom: 15px;border-bottom: 1px solid rgb(228, 226, 226);position: relative;overflow: hidden}
+.time-top{position: absolute;top: -10px;font-size: 14px}
+.time-bottom{position: absolute;top: 15px;font-size: 14px;left: 27px}
+.anount{position: absolute;right: 30px;font-size:16px;color: #515151}
+.fail{color: #F66F37;}
+.item-active{width: 100%;text-align: center;margin-top: 10px}
+.item-active image{width: 14px;height: 14px;vertical-align: -2px}
+.item-active text{font-size: 14px}
+.itemActiveInner{background:#C7C7C7;border:#EEE solid 5px;border-radius:30px;text-align:center;margin:10px 30px 20px;height:50px;    position:relative;color:#fff;overflow:hidden;font-size: 16px;box-sizing: border-box}
+.itemActiveInner .textBox{width:100%;position:absolute;top:0;left: 0;height:40px;z-index:1;line-height:40px;}
+.itemActiveInner .progressBox{position:absolute;top:0;left:0;height:40px;background:#F66F37;z-index:0;}

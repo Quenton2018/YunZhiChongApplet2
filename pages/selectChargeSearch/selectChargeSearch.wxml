@@ -1,0 +1,50 @@
+<view style="background: #fff;">
+  <view class="yzc-main">
+    <view class="search-box">
+      <form id="searchForm">
+        <view class='yzc-search'>
+          <input bindinput="search" class='inp1' type="text" placeholder="请输入您要搜索的关键字"></input>
+        </view>
+      </form>
+    </view>
+    <view hidden='{{localHide}}'>
+      <view class="search-content">
+        <text class="search-cdz-title" hidden='{{hide}}'>相关充电桩地址</text>
+        <view class="search-area" id="searchList">
+          <view hidden='searchHid'></view>
+        </view>
+      </view>
+      <view class="yzc-cdz">
+        <view class="yzc-dw-text">
+          <view class="dw-title" bindtap='goAddress' data-code="{{getAddress.code}}" data-area="{{getAddress.name}}">{{getAddress.name}}</view>
+          <view class="dw-relocation" bindtap='relocation'>
+            <image src='http://image.jx9n.com/MPQfQB4cAewKcmaN6WeZ_1552301220157.png'></image>
+            <text> 重新定位</text>
+          </view>
+        </view>
+      </view>
+      <view class="nearcdz-box">
+        <image src='http://image.jx9n.com/zwDmaCQE3fAtX6b3fZbG_1552301244197.png'></image>
+        <text class="search-cdz-title"> 最近使用充电桩地址</text>
+        <view class="recently" wx:for="{{lastAddress}}" wx:key="{{key}}">
+          <view bindtap='clickAddress' data-sn="{{item.sn}}" data-area="{{item.name}}">{{item.name}}</view>
+        </view>
+      </view>
+      <view class="nearcdz-box near-address">
+        <image src='http://image.jx9n.com/skCZYtkxHi47kkxH4yay_1552301273854.png'></image>
+        <text class="search-cdz-title"> 附近充电桩地址</text>
+        <view class="recently" wx:for="{{nearAddress}}" wx:key="{{key}}">
+          <view bindtap='clickAddress' data-sn="{{item.sn}}" data-area="{{item.name}}">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view hidden='{{searchHide}}'>
+      <view hidden='{{searchList}}'>
+        <view class="search-cdz-title">充电桩相关地址</view>
+        <view class='recently' wx:for="{{dataList}}" wx:key="{{key}}">
+          <view bindtap='tapAddress' data-code="{{item.code}}" data-area="{{item.name}}">{{item.name}}</view>
+        </view>
+      </view> 
+    </view>
+  </view>
+</view>

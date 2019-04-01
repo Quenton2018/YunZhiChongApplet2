@@ -1,0 +1,26 @@
+<view id="J_refresh" class="mui-content mui-scroll-wrapper" style="background: #fff;">
+  <view class="mui-scroll">
+    <view class="mui-tab flex">
+      <view class="mui-tab-sub flex-item {{index==1?'active':''}}" data-Type="1"  bindtap='clickTab'>支出明细</view>
+			<view class="mui-tab-sub flex-item {{index==0?'active':''}}" data-Type="0" bindtap='clickTab'>收入明细</view>
+    </view>
+    <view class="nodata" hidden='{{nullList}}'>
+      <image src='http://image.jx9n.com/yKpf2wCYdXXZHHxKQsdh_1552298562025.png'></image>
+      <view>暂无记录</view>
+    </view>
+    <view class="details-ul" id="itemList" hidden='{{newsHide}}' wx:for="{{newsList}}" wx:key="{{key}}">
+      <view class='left'>
+        <view class='strong' wx:if="{{consumptionType==0}}">+{{item.amount}}枚</view>
+        <view class='strong' wx:else>-{{item.amount}}枚</view>
+        <view class='title-color'>{{item.title}}</view>
+      </view>
+      <view class='right'>
+        <text>成功</text>
+        <view>{{item.createDate}}</view>
+      </view>  
+    </view>
+    <view hidden='{{noneList}}' class='fotter'>
+      <text>没有更多数据了</text>
+    </view>
+  </view>
+</view>

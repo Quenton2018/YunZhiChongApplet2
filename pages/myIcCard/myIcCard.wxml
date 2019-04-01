@@ -1,0 +1,23 @@
+<view class="mui-content" style="background: #F2F2F2;">
+  <view class="yzc-main">
+    <view class="no-iccard" hidden='{{haveIc}}'>
+      <image src="http://image.jx9n.com/hQ6zKTnj8Wb8XdTbzWGh_1552300601182.png"></image>
+      <view class="no-iccard-p">您还没有IC卡，请点击右上角扫一扫进行扫码或输入IC卡编号添加IC卡</view>
+    </view>
+    <view class="iccard-box" id="itemList" >
+      <view class="list-iccard" data-id="{{item.id}}">
+        <view class="list-iccard-p" wx:for="{{list}}" wx:key="{{key}}">
+          <image src='http://image.jx9n.com/kKBjdwZQGECFJX3ZkQtP_1552300629721.png'></image>
+          <view class='card'>
+            <text class="left">NO.{{item.card_id}}</text>
+            <text class="right" data-card="{{item.card_id}}" bindtap='unBinging'>解除绑定</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <navigator class="btn-submit" url='../myIcCard_binding/myIcCard_binding'>
+      <span>绑定IC卡</span>
+    </navigator>
+    <view class="no-iccard-desc">请扫描IC卡反面二维码进行绑定</view>
+  </view>
+</view>

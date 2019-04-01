@@ -1,0 +1,16 @@
+page{height: 100%;}
+.box{height: 100%;overflow: hidden;text-align: center;padding: 0 20px}
+.logo{margin: 30px 0;width: 100%;}
+.logo image{width: 75px;height: 75px}
+.yzc-ipnut{margin: 20px 20px 0;}
+input{text-align: left;padding: 12px 15px;height: auto;font-size: 16px;background: #fff}
+.input-desc{margin: 10px 0;text-align: left;font-size: 14px;color: #999}
+.btn-submit{margin: 30px 0 30px;border-radius: 50px;
+  background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));padding: 8px 0;color: #fff;font-size: 16px}
+.saoma image{width: 40px;height: 40px;vertical-align: middle;}
+.saoma view{margin-top: 10px;color: }
+.btn-submit{display: flex;justify-content: space-around;}
+.btn-submit view{width: 50%}
+.img{position: relative}
+.img image{width: 25px;height: 25px;position: absolute;right: 8px;top: 12px;z-index: 999;text-align: right}
+.foter{font-size: 14px;color: #999;margin-top: -10px;text-align: center}

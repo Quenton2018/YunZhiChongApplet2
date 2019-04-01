@@ -1,0 +1,19 @@
+page{height: 100%;background: #efeff4}
+.yzc-main{width: 100%;height: 150px;margin-top: -5px;background:#ff7426;
+	  padding: 0 15px;position: relative;box-sizing: border-box}
+.user-info{position:relative;width: 100%;height: 135px;background-color: #fff;top: 80px;left: 0;border-radius: 6px;}
+.user-avator{display:inline-block;width:100px;height:100px;position: absolute;left:50%;margin-left:-50px;top:-50px;z-index:99;}
+.user-avator image{width: 100px;height: 100px;border-radius: 50%;}
+.yzc-main .weui-cell::before{height: 0;border: 0}
+.yzc-main .pad{padding: 25rpx 80rpx 0;color: #000;font-size: 20px}
+.yzc-main .weui-cell .rblack{color: #000}
+.yzc-main .btm{padding-top: 0;margin-top: -10rpx;font-size: 16px;color: #999}
+.yzc-main .username{display: block;text-align: center}
+.username .mobile{color: #999;font-size: 14px}
+.sign{position: absolute;right: 0;bottom: 14%;color: white;z-index: 999}
+.sign .btn{color: white;background: #ff7426}
+.weui-cells_show{padding: 0 15px;background: #efeff4;margin-top: 170rpx;margin-bottom: 30px}
+page .weui-cells_show::before,page .weui-cells_show::after{height: 0;border: 0}
+.weui-cells_show .weui-cell_active{background: #fff;color: #515151;font-size: 16px}
+.weui-cell__hd image{margin-right: 5px;vertical-align: middle;width:20px; height: 20px;}
+.weui-cell_access{padding-top: 12px;padding-bottom: 12px}

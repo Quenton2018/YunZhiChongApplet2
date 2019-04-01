@@ -1,0 +1,39 @@
+<view class="logs">
+  <view class='logo'>
+    <image src='{{logoImg}}'></image>
+  </view>
+  <view class='login-form'>
+    <view class='form-group'>
+      <label>
+        <image src='{{telImg}}'></image>
+      </label>
+      <input  type='number' placeholder='请输入手机号' bindinput="setPhone" value='{{phoneVul}}'></input>
+    </view>
+    <view class='form-group' hidden='{{psdHid}}'>
+      <label>
+        <image src='{{checkImg}}'></image>
+      </label>
+      <input type='password' placeholder='请输入密码' bindinput="setPsd" value='{{psdVul}}'></input>
+    </view>
+    <view class='form-group code' hidden='{{checkHid}}'>
+      <label>
+        <image src='{{psdImg}}'></image>
+      </label>
+      <input type='text' placeholder='请输入验证码' bindinput="setCode" value='{{codeVul}}'></input>
+      <button disabled='{{disabled}}' bindtap="getCode"  class='send-code'>{{time}}</button>
+    </view>
+    <view class='login-method'>
+      <text hidden='{{psdHid}}' bindtap='psdWay'>手机快捷登录</text>
+      <text hidden='{{checkHid}}' bindtap='checkWay'>密码登录</text>
+    </view>
+    <view class='btn-submit' bindtap='loginCode'>
+      <button class='weui-btn button-hover' type='primary'>登录</button>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='forgetpass' bindtap='forgetpass'>忘记密码</view>
+    <view>|</view>
+    <view>没有账号？</view>
+    <view class="register" bindtap='register'>注册</view>
+  </view>
+</view>

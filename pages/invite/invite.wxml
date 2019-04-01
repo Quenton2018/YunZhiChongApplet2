@@ -1,0 +1,42 @@
+<view class="logs">
+  <view class='logo'>
+    <image src='{{logoImg}}'></image>
+  </view>
+  <view class='login-form'>
+    <view class='form-group invite'>
+      <label>
+        <image src='{{telImg}}'></image>
+      </label>
+      <input disabled type='number' value='邀请人：{{inviteTel}}'></input>
+    </view>
+    <view class='form-group'>
+      <label>
+        <image src='{{telImg}}'></image>
+      </label>
+      <input type='number' placeholder='请输入手机号' bindinput="setPhone" value='{{phoneVul}}'></input>
+    </view>
+    <view class='form-group code'>
+      <label>
+        <image src='{{psdImg}}'></image>
+      </label>
+      <input type='text' placeholder='请输入验证码' bindinput="setCode" value='{{codeVul}}'></input>
+      <button disabled='{{disabled}}' bindtap="getCode"  class='send-code'>{{time}}</button>
+    </view>
+    <view class='form-group'>
+      <label>
+        <image src='{{checkImg}}'></image>
+      </label>
+      <input type='password' placeholder='请设置密码' bindinput="setPsd" value='{{psdVul}}'></input>
+    </view>
+    <view class='form-group'>
+      <label>
+        <image src='{{checkImg}}'></image>
+      </label>
+      <input type='password' placeholder='确认密码' bindinput="surePsd" value='{{surePsdVul}}'></input>
+    </view>
+    <view class='btn-submit' bindtap='loginCode'>
+      <button class='weui-btn button-hover' type='primary'>注册</button>
+    </view>
+  </view>
+</view>
+

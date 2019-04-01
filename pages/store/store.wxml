@@ -1,0 +1,3 @@
+<view class='box'>
+  <image class="{{isIpx ? 'iphonex':'iphone'}}" src='http://image.jx9n.com/PtyntC32ZTDfNK6sM8ni_1552301340278.jpg'></image>
+</view>

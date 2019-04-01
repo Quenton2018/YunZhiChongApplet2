@@ -1,0 +1,19 @@
+/* .fotter{width: 100%;position: fixed;bottom: 0;left: 0} */
+.fotter{width: 100%;margin-top: 40px;padding: 0 20px;box-sizing: border-box;}
+.fotter button{width: 100%;height: 50px;background: linear-gradient(to right, #FF7546 , #F08200);border-radius: 25px;
+  color: #fff;line-height: 50px}
+.h2{width: 100%;font-size: 16px;padding-left: 22px;color: #333;box-sizing: border-box;font-weight: 700;margin-bottom: 5px}
+.moneyBox{width:90%;margin:0 auto;margin-bottom:2rem;overflow: hidden}
+.moneyBox .item{float:left;width:50%;text-align:center;}
+.moneyBox .item .itemInner{background:#EDEDED;border-radius:5px;overflow:hidden;margin:5px;padding:10px 0;color: #515151}
+.moneyBox .item .itemInner view{display:block;font-weight:400;font-size: 18px;}
+.moneyBox .item .itemInner view .yuan{font-size: 16px;margin-left: 5px}
+.moneyBox .item .itemInner view.b2{font-size:.7rem;font-weight:400;}
+.itemInner .b3{padding: 10px 0}
+.payType {font-size: 18px}
+.payType image{width: 16px;height: 16px}
+.weui-cell{padding: 10px 22px}
+.payimg{width: 18px;height: 18px;vertical-align: middle;margin-right: 8px}
+page radio-group .weui-check__label::after{height: 0;border: 0}
+.weui-cell__bd{font-size: 16px;color: #515151}
+.selected.active .itemInner{background:#F88E36;color:#fff;}

@@ -1,0 +1,11 @@
+.avai-balance{background:linear-gradient(160deg,rgba(255,173,47,1),rgba(254,79,28,1));box-shadow:4px 3px 18px 0px rgba(254,221,208,0.64);margin: 20px;height:136px;border-radius: 6px;text-align: center;color: #fff;}
+.avai-text{color: #fff;padding: 30px 0 0px;font-size: 15px;}
+.avai-money #money{font-size: 24px;padding-left: 4px;font-weight: 700}
+.yuan{font-size: 15px}
+.btn-submit{display:block;margin: 30px 20px 20px;border-radius: 50px;
+  background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));
+  font-size: 18px;text-align: center;padding: 8px;color: #fff}
+navigator{position: relative;padding: 10px 0;}
+navigator image{width: 18px;height: 18px;position: absolute;top: 14px;left: 18px}
+.weui-cell__bd{margin-left: 40px;font-size: 18px;color: #515151}
+.trade-box .box-h2{height:44px;line-height:44px;background:#EBEBEB;font-size: 16px;padding-left: 20px;color: #8F8F8F;}

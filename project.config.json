@@ -1,0 +1,275 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wxa9ffa9865029d606",
+	"projectname": "%E4%BA%91%E6%99%BA%E5%85%85%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 32,
+			"list": [
+				{
+					"id": 0,
+					"name": "wode",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wode1",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "forgetpass",
+					"pathName": "pages/forgetpass/forgetpass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "charge",
+					"pathName": "pages/charge/charge",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "chargeing",
+					"pathName": "pages/chargeing/chargeing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "selectChargeSearch",
+					"pathName": "pages/selectChargeSearch/selectChargeSearch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "chargeDetail",
+					"pathName": "pages/chargeDetail/chargeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "recharge",
+					"pathName": "pages/recharge/recharge",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "chargeList",
+					"pathName": "pages/chargeList/chargeList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myWallet",
+					"pathName": "pages/myWallet/myWallet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "detailsBalance",
+					"pathName": "pages/detailsBalance/detailsBalance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myIcCard",
+					"pathName": "pages/myIcCard/myIcCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myIcCard_binding",
+					"pathName": "pages/myIcCard_binding/myIcCard_binding",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyCooperate",
+					"pathName": "pages/applyCooperate/applyCooperate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "invitation",
+					"pathName": "pages/invitation/invitation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customerService",
+					"pathName": "pages/customerService/customerService",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customerService",
+					"pathName": "pages/customerService/customerService",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "commonProblem",
+					"pathName": "pages/commonProblem/commonProblem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "clouddrill",
+					"pathName": "pages/clouddrill/clouddrill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "userInfo",
+					"pathName": "pages/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "modifyNickName",
+					"pathName": "pages/modifyNickName/modifyNickName",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "modifyPassWord",
+					"pathName": "pages/modifyPassWord/modifyPassWord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "scan",
+					"pathName": "pages/scan/scan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyPartner",
+					"pathName": "pages/applyPartner/applyPartner",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "store",
+					"pathName": "pages/store/store",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "invite",
+					"pathName": "pages/invite/invite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "invite",
+					"pathName": "pages/invite/invite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myWallet",
+					"pathName": "pages/myWallet/myWallet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyCooperate",
+					"pathName": "pages/applyCooperate/applyCooperate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "tologin",
+					"pathName": "pages/tologin/tologin",
+					"scene": null
+				}
+			]
+		}
+	}
+}

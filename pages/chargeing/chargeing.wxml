@@ -1,0 +1,53 @@
+<view style="background: #fff;">
+  <view class='charging'>
+    <view class='charging-img'>
+      <view>充电时长</view>
+      <text class="charging-time">{{charginTime}}</text>
+    </view>
+    <view class='scoke'>
+      <image src='http://image.jx9n.com/5rtbbYnFfMN6hyibWcEw_1552296027922.png'></image>
+      <text id="order-addr">{{orderAddr}}</text>-桩号<text id="order-zh">{{orderZh}}</text>-插座号<text id="order-cz">{{orderCz}}</text>
+    </view>
+    <view class="charging-desc">
+      <view class='left' hidden='{{show}}'>
+        <view class='charging-desc-left right-boder'>
+          <view class='desc-h2'>充满自停</view>
+          <view class='desc-p'>充电方式</view>
+        </view>
+        <view class='charging-desc-left'>
+          <view class='desc-h2'>
+            <text class='price'>{{orderMoney}}</text>
+            <text class='sub'> 元</text>
+          </view>
+          <view class='desc-p' style="margin-top:-2px">冻结金额</view>
+        </view>
+      </view>
+      <view class='right' hidden='{{hide}}'>
+        <view class='charging-desc-left right-boder'>
+          <view class='desc-h2'>
+            <text class='price' >{{orderTime}}</text>
+            <text class='sub'> 小时</text>
+          </view>
+          <view class='desc-p'>充电时长</view>
+        </view>
+        <view class='charging-desc-left'>
+          <view class='desc-h2'>
+            <text class='price'>{{orderMoney}}</text>
+            <text class='sub'> 元</text>
+          </view>
+          <view class='desc-p' style="margin-top:-2px">充电金额</view>
+        </view>
+      </view>
+    </view>
+    <view class="btn-submit" bindtap='modalcnt'>
+      <text>结束充电</text>
+    </view>
+  </view>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="结束充电" confirm-text="确认结束" cancel-text="取消" bindcancel="cancel" bindconfirm="over">
+    <view bindtap='cancel'>充电方式：{{methods}}</view>
+    <view bindtap='over'>应付金额：{{total}}元</view>
+</modal>
+
+

@@ -1,0 +1,8 @@
+<view class='box'>
+  <image class="{{isIpx ? 'iphonex':'iphone'}}" src='http://image.jx9n.com/QNsZFRZYe84ce3EwbHnM_1552301138926.jpg'></image>
+</view>
+
+<view class="{{isIpx ? 'btnx':'btn'}}">
+  <image src='http://image.jx9n.com/b6zzYtmsW3csbZp5ZZ2J_1552301166075.png'></image>
+  <button bindtap='scancode' class='btn-submit'>   扫码充电</button>
+</view>

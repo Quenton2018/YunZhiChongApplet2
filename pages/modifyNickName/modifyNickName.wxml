@@ -1,0 +1,13 @@
+<view class='box' style="background: #EBECEE;">
+  <view class="logo">
+    <image src='http://image.jx9n.com/CzFatSxrH4WPGH2TjP2d_1552300214701.png'></image>
+  </view>
+  <form>
+    <view class="mui-input-row yzc-ipnut"></view>
+    <input class='inp' type="tel" placeholder="请输入您的新昵称" maxlength="10" bindinput='bingInp'></input>
+    <view class="input-desc">仅支持中文、英文大小写、数字、减号及其组合。</view>
+	    <view class="btn-submit" id="submitBtn" bindtap='getList'>
+        <view>保存</view>
+			</view>
+  </form>
+</view>

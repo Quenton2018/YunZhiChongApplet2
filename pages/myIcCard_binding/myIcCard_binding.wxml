@@ -1,0 +1,19 @@
+<view class='box' style="background: #EBECEE;">
+  <view class="logo">
+    <image src='http://image.jx9n.com/CzFatSxrH4WPGH2TjP2d_1552300214701.png'></image>
+  </view>
+  <form>
+    <view class="mui-input-row yzc-ipnut"></view>
+    <view class='img'>
+      <image bindtap='scancode' src='http://image.jx9n.com/bA7nxEBStABJQat4xwX4_1552380149091.png'></image>
+      <input class='inp' type="tel" placeholder="请输入10位数的IC卡卡号" maxlength="10" bindinput='inputVul'></input>
+    </view>
+    <view class="input-desc">云智充IC卡正面右下角10位数字组合。</view>
+    <view class="btn-submit" id="submitBtn" bindtap='clickIC'>
+      <text>确认绑定</text>
+    </view>
+  </form>
+  <view class='foter'>请扫描IC卡上二维码进行绑定</view>
+</view>
+
+

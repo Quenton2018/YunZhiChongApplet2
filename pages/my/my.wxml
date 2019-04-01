@@ -1,0 +1,69 @@
+<!--pages/my/my.wxml-->
+<view style='background:#efeff4;'>
+  <view class="yzc-main">
+		<view class='user-info'>
+      <view class="user-avator">
+        <image src="{{userImg}}" id="userAvator" bindtap='userInfo'></image>
+      </view>
+      <view class='weui-cell pad'>
+        <view class='weui-cell__bd' id="money">{{money}}</view>
+        <view class='weui-cell__ft rblack' id="points">{{points}}</view>
+      </view>
+      <view class='weui-cell pad btm'>
+        <view class='weui-cell__bd'>余额</view>
+        <view class='weui-cell__ft'>云钻</view>
+      </view>
+      <view class='sign' bindtap='qianDao'>
+        <button class='weui-btn mini-btn button-hover .btn' disabled='{{disable}}' size='mini'>{{sign}}</button>
+      </view>
+    </view>
+    <view class='weui-cell username'>
+      <view id="nickname">{{nickname}}</view>
+      <view class='mobile' id="mobile">{{tell}}</view>
+    </view>
+	</view>
+  <view class='weui-cells weui-cells_show'>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../chargeList/chargeList'>
+      <view class='weui-cell__hd'>
+        <image src='{{chargeImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>我的充电</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../myWallet/myWallet'>
+      <view class='weui-cell__hd'>
+        <image src='{{walletImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>我的钱包</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../myIcCard/myIcCard'>
+      <view class='weui-cell__hd'>
+        <image src='{{icImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>我的IC卡</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../applyCooperate/applyCooperate'>
+      <view class='weui-cell__hd'>
+        <image src='{{partnerImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>申请合作</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../invitation/invitation'>
+      <view class='weui-cell__hd'>
+        <image src='{{friendImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>邀请好友</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+    <navigator class='weui-cell weui-cell_access weui-cell_active' url='../customerService/customerService'>
+      <view class='weui-cell__hd'>
+        <image src='{{serviceImg}}'></image>
+      </view>
+      <view class='weui-cell__bd'>客服中心</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
+    </navigator>
+  </view>
+</view>

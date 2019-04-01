@@ -1,0 +1,6 @@
+.box{text-align: center;padding: 0 25px}
+.box image{display: inline-block;width: 80px;height: 80px;margin-top: 50px;}
+.box .title{font-weight: 700;margin-bottom: 40px}
+.login{padding-top: 40px;border-top: 1px solid rgb(228, 225, 225)}
+.fotter{font-size: 14px;color: rgb(126, 146, 178);margin-bottom: 10px}
+button{background: rgb(65, 189, 118);color: #fff;font-weight: 540}

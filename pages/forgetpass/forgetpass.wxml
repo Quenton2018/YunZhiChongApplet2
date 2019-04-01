@@ -1,0 +1,33 @@
+<view class="logs">
+  <view class='logo'>
+    <image src='{{logoImg}}'></image>
+  </view>
+  <view class='login-form'>
+    <view class='form-group'>
+      <label>
+        <image src='{{telImg}}'></image>
+      </label>
+      <input type='number' placeholder='请输入手机号' bindinput="setPhone" value='{{phoneVul}}'></input>
+    </view>
+    <view class='form-group'>
+      <label>
+        <image src='{{checkImg}}'></image>
+      </label>
+      <input type='password' placeholder='请重置新密码' bindinput="setPsd" value='{{psdVul}}'></input>
+    </view>
+    <view class='form-group code'>
+      <label>
+        <image src='{{psdImg}}'></image>
+      </label>
+      <input type='text' placeholder='请输入验证码' bindinput="setCode" value='{{codeVul}}'></input>
+      <button disabled='{{disabled}}' bindtap="getCode" class='send-code'>{{time}}</button>
+    </view>
+    <view class='btn-submit' bindtap='loginCode'>
+      <button class='weui-btn button-hover' type='primary'>确认</button>
+    </view>
+  </view>
+  <view class='footer'>
+    <view>已有账号?</view>
+    <view class="register" bindtap='register'>去登录</view>
+  </view>
+</view>

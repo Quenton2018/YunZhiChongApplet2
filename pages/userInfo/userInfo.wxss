@@ -1,0 +1,15 @@
+.user-img{text-align: center;padding: 30px 0 20px;}
+.user-avator{width: 120px;height: 120px;position: relative;margin:0 auto;}
+.user-icon{position:absolute;bottom:0;right:8px;width: 28px;height: 28px;line-height: 28px;background: #FF7A0B;border-radius:50%;        color: #fff;}
+.user-icon .paizhao{width: 20px;height: 20px;position: absolute;top: 4px;left: 4px}
+.user-img image{width: 120px;height: 120px;border-radius:50%;}
+.user-img .h2{color: #333;font-size: 16px;padding: 10px 0;font-weight: bold;}
+.weui-cell{padding: 15px;}
+page .weui-cell_access::before{border: none}
+.weui-cell_active{background: #fff;border-bottom: 1px solid rgb(223, 223, 223);}
+.answer{position: absolute;top: 15px;right: 30px;color: #999}
+.phone{right: 15px;}
+.btn-submit{margin: 50px 20px 30px;border-radius: 50px;background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));
+  text-align: center;color: #fff;padding: 10px 0;}
+navigator,.navigator{font-size: 16px;position: relative}
+

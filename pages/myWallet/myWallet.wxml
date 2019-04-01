@@ -1,0 +1,36 @@
+<view style="background: #fff;">
+  <view class="yzc-main">
+    <view class="avai-balance">
+      <view class="avai-text">可用余额</view>
+      <view class="avai-money">
+        <text id="money">{{money}}</text>
+        <text class='yuan'> 元</text>
+      </view>
+    </view>
+    <navigator class='btn-submit' url='../recharge/recharge'>立即充值</navigator>
+    <view class="detailed-box">
+      <navigator url='../detailsBalance/detailsBalance' style='border-bottom: 1px solid #EBEBEB'>
+        <view class="weui-cell weui-cell_select">
+          <image src='http://image.jx9n.com/prbSPrWsPBTNPPxjadRH_1552300860354.png'></image>
+          <view class="weui-cell__bd">
+            <view class="weui-select">余额明细</view>
+          </view>
+            </view>
+      </navigator>
+      <navigator url='../clouddrill/clouddrill' style='border-bottom: 1px solid #EBEBEB'>
+        <view class="weui-cell weui-cell_select">
+          <image src='http://image.jx9n.com/65RReaMif3WFCQsMAXZT_1552300909352.png'></image>
+          <view class="weui-cell__bd">
+            <view class="weui-select">云钻明细</view>
+          </view>
+            </view>
+      </navigator>
+    </view>
+    <!-- <view class="trade-box">
+      <view class='box-h2'>交易信息</view>
+      <view>
+        <view>{{deal}}</view>
+      </view>
+    </view> -->
+  </view>
+</view>

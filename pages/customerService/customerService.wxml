@@ -1,0 +1,29 @@
+<view class="mui-content" style="background: #fff;">
+  <view class="yzc-main">
+    <view class="banner">
+      <image src='http://image.jx9n.com/7NpefMJBrxD2nnmsmF6K_1552299838518.png'></image>
+    </view>
+    <view class="customer-tel" >服务热线:400-825-1068</view>
+    <view class="btn-submit" bindtap='calling'>
+			<text>联系客服</text>
+		</view>
+    <view class="customer-hot">
+      <view class="hot-title">热点问题</view>
+      <view class="hot-table" >
+        <view wx:for="{{list}}" wx:key="{{key}}">
+          <view class="hot-list" data-id="{{item.id}}" bindtap='jumpPage'>
+            <image wx:if="{{index == 0}}" src='{{img[0]}}'></image>
+            <image wx:if="{{index == 1}}" src='{{img[1]}}'></image>
+            <image wx:if="{{index == 2}}" src='{{img[2]}}'></image>
+            <image wx:if="{{index == 3}}" src='{{img[3]}}'></image>
+            <image wx:if="{{index == 4}}" src='{{img[4]}}'></image>
+            <image wx:if="{{index == 5}}" src='{{img[5]}}'></image>
+            <image wx:if="{{index == 6}}" src='{{img[6]}}'></image>
+            <image wx:if="{{index == 7}}" src='{{img[7]}}'></image>
+            <text> {{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

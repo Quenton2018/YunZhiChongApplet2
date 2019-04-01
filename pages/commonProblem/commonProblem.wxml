@@ -1,0 +1,9 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+ 
+
+<view class="mui-content" style="background: #fff;">
+  <view class="wxParse" style='margin-top:20px;padding:0 15px;box-sizing:border-box'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+.apply-box{background: #fff;padding:0 30px}
+.apply-box .apply-mesg{padding: 20px 0;color: #FF6D22;text-align: center;font-size: 12px;font-weight: 400;}
+.apply-box .weui-label,.weui-input,.weui-select{font-size: 16px}
+.apply-box .weui-cell_input::before{border-width: 0;height: 0}
+.apply-box .weui-cell_input,.apply-city{padding: 6px 0;position: relative}
+.apply-box .weui-cell_input,.weui-cell_select{border-bottom: 1px solid #ccc;}
+.apply-box .weui-cell_select{padding-top: 8px;padding-bottom: 8px;}
+.apply-box .weui-cell_select::before{height: 0;border-width: 0}
+.apply-box .apply-num{padding-top: 8px;padding-bottom: 8px}
+.apply-box .apply-btn{position: absolute;right: 0;top: -6px}
+.apply-btn .apply-count{height: 40px;margin: 0px 2px}
+.apply-box .weui-cell__bd button{font-size: 16px}
+.apply-box .weui-input{text-align: right}
+.apply-box .apply-count{width: 50px;display: inline-block;text-align: center;border-bottom: 1px solid #ccc}
+.apply-submit{width: 100%;position: fixed;bottom: 0;left: 0;
+  background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));
+  text-align: center;color: #fff;padding: 10px 0;}
+.apply-box .apply-city{margin-right:0;padding-right: 0;font-size: 16px;overflow: hidden;white-space:nowrap;box-sizing: border-box;  position: relative;text-align: right}
+.apply-box .city-top{padding-left: 0}
+.picker{overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+.picker .city-selet{position: absolute;right: 0;top: 11px}

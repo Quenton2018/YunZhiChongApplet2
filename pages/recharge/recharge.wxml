@@ -1,0 +1,30 @@
+<view style="background: #fff;">
+  <view class="myContent" style="padding-top: 70px">
+  <view class="h2">充值金额</view>
+    <view class="moneyBox" >
+      <view class="item selected {{index==seq?'active':''}}" wx:for="{{recharge}}" wx:key="{{key}}"  data-money="10">
+        <view bindtap='selPrice' class="itemInner" data-money="{{item.money}}" data-index="{{index}}">
+          <view wx:if="{{item.showText==true}}" class="b3">{{item.money}}<text class='yuan'>元</text></view>
+          <view wx:else class="b1">{{item.money}}<text class='yuan'>元</text></view>
+          <view class="b2" wx:if="{{item.showText == true}}"></view>
+          <view class="b2" wx:else>{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="h2">微信支付</view>
+    <radio-group bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+        <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <image class='payimg' src='{{item.src}}'></image>
+        <view class="weui-cell__bd">{{item.name}}</view>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+        </view>
+      </label>
+    </radio-group>
+  </view>
+</view>
+<view class="fotter" id="submitBtn" bindtap='clickPay'>
+  <button>充值</button>
+</view>

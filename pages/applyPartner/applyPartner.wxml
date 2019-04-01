@@ -1,0 +1,46 @@
+<view class='apply-box'>
+  <view class="apply-mesg">请正确填写信息，信息提交后，客服人员会与您联系</view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">联系人</view> 
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="请输入姓名" bindinput='clickName'/>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">联系电话</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input type='number' class="weui-input" placeholder="请输入联系电话" bindinput='clickTel'/>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd apply-num">
+      <view class="weui-label">预估安装数量</view>
+    </view>
+    <view class="weui-cell__bd apply-btn">
+      <button class="weui-btn mini-btn" disabled='{{minDisable}}' type="default" size="mini" bindtap='sub'>-</button>
+      <input class='apply-count' value='{{numbers}}' bindinput='installs'></input>
+      <button class="weui-btn mini-btn" disabled='{{maxDisable}}' type="default" size="mini" bindtap='add'>+</button>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd city-top">
+      <view class="weui-label">申请发展地区</view>
+    </view>
+    <view class="weui-cell__bd apply-city">
+      <picker class='picker-warp' mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker" style='color:#999;margin-right:25px'>
+          {{region[0]}}{{region[1]}}{{region[2]}} <text class='city-selet'> ﹀</text></view>
+      </picker>
+    </view>
+  </view>
+  <view class="apply-submit" bindtap='present'>
+    <text>提交申请</text>
+  </view>
+</view>
+
+

@@ -1,0 +1,18 @@
+.btn-submit{margin:30px 20px 30px;border-radius:50px;background:linear-gradient(86deg,rgba(255,156,44,1),rgba(255,109,34,1));
+  text-align: center;color: #fff;height: 50px;line-height: 50px;font-size: 18px}
+.charging-img{background:url(http://image.jx9n.com/admhJC2sYe63ySaFhZs4_1552299732865.png);width:230px;height:230px;           background-size:100%;margin:40px auto;text-align:center;}
+.charging-time{color:#fff;font-weight:bold;font-size: 24px}
+.charging-img view{color:#fff;padding-top:80px;font-size:16px;}
+.charging .scoke{font-size:16px;color:#333;text-align:center;font-weight:bold;}
+.icon-dingwei{color:#FF6D22;font-size:16px;vertical-align:-1px;}
+.scoke image{width: 16px;height: 18px;vertical-align: -4px}
+.charging-desc{margin:20px 70px 0;border-top:1px solid #C4C4C4;border-bottom:1px solid #C4C4C4;padding:10px 0;}
+.left,.right{width: 100%;text-align: center;display: flex;justify-content: space-between}
+.right-boder:after{content:'';height:50px;width:1px;background:#E0E0E0;position:absolute;right:0;top:4px;}
+.charging-desc-left{width: 50%;box-sizing: border-box;position: relative}
+.desc-h2{font-size: 20px;}
+.desc-p{color:#999;font-size:16px;}
+.sub{font-size: 14px}
+.price{font-size: 22px;font-weight: 700}
+.time-list{margin-bottom: 30px}
+
